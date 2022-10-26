@@ -1,11 +1,8 @@
 import { infos } from './fakerApi.js'
 
-// Prevent Reload
-submitInfo = (event) => event.preventDefault();
+const preventReload = (event) => event.preventDefault();
 
 const insertInfos = () => {
-    const submitInfos = infos.generateFaker(['name','email']);
+    const submitInfos = infos([]);
     console.log(submitInfos);
 }
-
-console.log(insertInfos())

@@ -16,7 +16,7 @@
 
         <ul class="menu">
             <li id="menu-item">
-                <a href="http://#">INÍCIO</a>
+                <a href="home.html">INÍCIO</a>
             </li>
             <li id="menu-item">
                 <a href="http://#">QUEM SOMOS</a>
@@ -28,13 +28,13 @@
                 <a href="http://#">EQUIPE</a>
             </li>
             <li id="menu-item">
-                <a href="http://#">PLANOS</a>
+                <a href="plans.html">PLANOS</a>
             </li>
             <li id="menu-item">
-                <a href="http://#">LOGIN</a>
+                <a href="login.html">LOGIN</a>
             </li>
             <li id="menu-item">
-                <a href="http://#">CADASTRO</a>
+                <a href="registre.html">CADASTRO</a>
             </li>
         </ul>
     </nav>
@@ -52,7 +52,7 @@
     
     <!-- FORM -->
     <div class="login-registre">
-        <form onsubmit="submitInfo(event), insertInfos()">
+        <form onsubmit="preventReload(event), insertInfos()">
             <picture>
                 <img src="img/ClinicaVetLogo.svg" alt="Logo escrito ClínicaVet" id="logoClinicaVet">
             </picture>
@@ -69,8 +69,8 @@
             <label for="endereco"><img src="img/adressicon.svg" id="adressicon" alt=""></label>
             <input type="text" placeholder="Endereço" name="adress" id="adress">
 
-            <label for="cellphone"><img src="img/phoneicon.svg" id="phoneicon" alt=""></label>
-            <input type="tel" placeholder="Telefone (DDD) xxxx-xxx" name="cellphone" id="cellphone">
+            <label for="phoneNumber"><img src="img/phoneicon.svg" id="phoneicon" alt=""></label>
+            <input type="tel" placeholder="Telefone (DDD) xxxx-xxx" name="phoneNumber" id="phoneNumber">
 
             <p>Já possui uma conta? <a href="login.html">Faça login</a></p>
 
