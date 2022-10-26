@@ -84,40 +84,52 @@ h1 span{
 
 /* --- PLANS CARD --- */
 .container{
-    position: relative;
+    position: absolute;
 }
 
 .card{
-    overflow-x: auto;
-    position: absolute;
+    position: relative;
     display: flex;
-    flex-flow: row nowrap;
-    top: 30%;
-    left: 28%;
+    align-items: center;
+    flex-direction: row;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 4px;
+    left: 94vh;
+    gap: 16vh;
+
+    overflow: auto;
 }
 
 .arrow{
+    z-index: 1;
     position: absolute;
-    width: 8vh;
-    opacity: 0.5;
+    width: 40%;
+    opacity: 0.2;
     top: 50vh;
     
     background-color: transparent;
     border: none;
 }
 
+#arrow-left, 
+#arrow-right{
+    width: 40%
+}
+
 .arrow:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 #arrow-left{
     position: inherit;
-    left: 80vh;
+    left: 70vh;
 }
 
 #arrow-right{
     position: inherit;
-    left: 198vh;
+    left: 184vh;
 }
 
 h2{
@@ -179,11 +191,12 @@ h3{
     font-family: 'Exo', sans-serif;
 }
 
+
 /* CARD INDIVIDUAL */
 .card-individual{
     position: relative;
     margin-top: 6rem;
-    left: 30%;
+
 }
 
 .card-individual .card-info{
@@ -200,7 +213,6 @@ h3{
 .card-pair{
     position: relative;
     margin-top: 6rem;
-    left: 44%;
 }
 
 .card-pair .card-info{
@@ -208,7 +220,7 @@ h3{
 }
 
 .card-pair img{
-    width: 66.5%;
+    width: 76.5%;
 }
 /* END CARD PAIR */
 
@@ -216,7 +228,6 @@ h3{
 .card-group{
     position: relative;
     margin-top: 6rem;
-    left: 58%;
 }
 
 .card-group .card-top{
