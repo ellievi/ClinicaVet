@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>ClinicaVet - Login</title>
+</head>
+<body>
+       <!---- MENU ---->
+       <nav>
+        <picture>
+            <a href="homepage/index.html"><img id="img-logo" src="img/ClinicaVetLogo.svg" alt=""></a>
+        </picture>
+
+        <ul class="menu">
+            <li id="menu-item">
+                <a href="http://#">INÍCIO</a>
+            </li>
+            <li id="menu-item">
+                <a href="http://#">QUEM SOMOS</a>
+            </li>
+            <li id="menu-item">
+                <a href="http://#">CONTATOS</a>
+            </li>
+            <li id="menu-item">
+                <a href="http://#">EQUIPE</a>
+            </li>
+            <li id="menu-item">
+                <a href="http://#">PLANOS</a>
+            </li>
+            <li id="menu-item">
+                <a href="http://#">LOGIN</a>
+            </li>
+            <li id="menu-item">
+                <a href="http://#">CADASTRO</a>
+            </li>
+        </ul>
+    </nav>
+    <!---- END MENU ---->
+
+    <div class="banner">
+
+        <h1>Conecte-se</h1>
+
+        <picture>
+            <img src="img/ClinicaVetIcon.svg" alt="Imagem de um cachorro sorrindo e um gato sério">
+        </picture>    
+    </div>
+
+    
+    <!-- FORM -->
+    <div class="login-registre">
+        <form onsubmit="submitInfo(event)">
+            <picture>
+                <img src="img/ClinicaVetLogo.svg" alt="Logo escrito ClínicaVet" id="logoClinicaVet">
+            </picture>
+
+            <label for="email"><img src="img/emailicon.svg" id="emailicon" alt="Ícone representando uma pessoa"></label>
+            <input type="email" required placeholder="Email" name="email" id="email">
+
+            <label for="password"><img src="img/lockicon.svg" id="lockicon" alt="Ícone de um cadeado"></label>
+            <input type="password" required placeholder="Senha" name="password" id="password">
+
+            <a href="/#" id="forgotpassword">Esqueci a senha</a>
+            <p>Ainda não possui uma conta? <a href="registre.html">Cadastre-se</a></p>
+
+            <button id="submit-btn" type="submit">LOGIN</button>
+        </form>
+    </div>    
+    <!-- FORM -->
+    <picture>
+        <img id="testimg" src="img/personinfoicon.svg" alt="">
+    </picture>
+
+    <div class="showSbmtInfo"></div>
+</body>
+<script src="sbmtValue.js"></script>
+</html>

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('img/marmore-background.png');
+}
+
+/* --- MENU --- */
+nav{
+    background-color: #A0C4BF;
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    margin-left: -8em;
+}
+
+#menu-item{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 26px;
+}
+
+#menu-item a:hover{
+    color: white;
+    font-style: italic;
+}
+
+#menu-item a{
+    color: black;
+}
+
+
+#img-logo{
+    width: 38%;
+    margin-left: 16%;
+}
+/* --- END MENU --- */
+
+/* Banner */
+h1{
+    position: absolute;
+    left: 12%;
+    top: 28%;
+
+    font-family: 'Roboto Slab', serif;
+    color: #5d837e;
+    font-size: 70px;
+    cursor: progress;
+}
+
+.banner img{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 44%;
+}
+/* End Banner */
+
+
+/* Form */
+#logoClinicaVet{
+    position: absolute;
+    width: 32%;
+    left: 32%;
+    top: 6%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    height: 30em;
+    position: relative;
+}
+
+form label{
+    margin-top: 14%;
+}
+
+form label img{
+    opacity: 0.3;
+    position: absolute;
+    width: 6%;
+}
+
+#emailicon{
+    top: 32%;
+    left: 66%;
+}
+
+#lockicon{
+    top: 48%;
+    left: 66%;
+}
+
+form input{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    margin: -8vh;
+    margin-top: 18px;
+
+
+    border-style: i;
+    border-radius: 5px;
+    border-color: #a0c4bf94;
+}
+
+.login-registre{
+    margin-top: -37%;
+    margin-left: 54%;
+    width: 40%;
+    
+    border-radius: 15px;
+    background-color: #a0c4bf94;
+}
+
+#forgotpassword{
+    position: absolute;
+    top: 58%;
+
+    opacity: 0.4;
+    color: black;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#forgotpassword:hover{
+    opacity: 1;
+}
+
+form p{
+    position: absolute;
+    top: 86%;
+
+    color: black;
+    font-family: 'Roboto Slab', serif;
+}
+
+form a{
+    font-size: 20px;
+    color: #195a51;
+}
+
+form a:hover{
+    color: black;
+}
+
+#submit-btn{
+    background-color: #A0C4BF;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+
+    padding: 10px;
+    margin-top: 20%;
+    width: 50%;
+    border-radius: 10px;
+    border-style: none;
+
+    cursor: pointer;
+}
+
+#submit-btn:hover{
+    opacity: 0.6;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.233);
+}
+/* End Form */
+
+/* SHOW FORM INFO */
+#testimg{
+    opacity: 0.3;
+    position: absolute;
+    top: 108%;
+    left: 16%;
+}
+
+.showSbmtInfo{
+    position: absolute;
+    padding: 20vh;
+    left: 15%;
+    margin-top: 10vh;
+
+    background-color: #a0c4bf94;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+}
+/* END SHOW FORM INFO */
