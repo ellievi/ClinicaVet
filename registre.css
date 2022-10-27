@@ -18,7 +18,7 @@ nav{
 
     display: flex;
     flex-direction: row;
-    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
 }
 
 .menu{
@@ -32,7 +32,7 @@ nav{
 #menu-item{
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     margin: 26px;
 }
 
@@ -62,7 +62,11 @@ h1{
     font-family: 'Roboto Slab', serif;
     color: #5d837e;
     font-size: 70px;
-    cursor: progress;
+}
+
+h1:hover{
+    background-color: #a0c4bf86;
+    cursor: default;
 }
 
 .banner img{
@@ -143,6 +147,10 @@ form input{
 form input:hover{
     border: none;
 }
+
+form input:focus{
+    outline: 0;
+} 
 
 .login-registre{
     margin-top: -37%;
