@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: url('img/mypets-background.png');
+}
+
+/* --- MENU --- */
+nav{
+    background-color: #A0C4BF;
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    margin-left: -8em;
+}
+
+.menu li:nth-child(4){
+    border-bottom: solid;
+    border-color: rgba(255, 255, 255, 0.603);
+}
+
+#menu-item{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 26px;
+}
+
+#menu-item a:hover{
+    border-bottom: solid;
+    border-color: rgba(255, 255, 255, 0.603);
+}
+
+#menu-item a{
+    color: black;
+}
+
+
+#img-logo{
+    width: 38%;
+    margin-left: 16%;
+}
+/* --- END MENU --- */
+
+
+/* --- MY PETS BANNER ---*/
+.mypets-banner img{
+    z-index: 1;
+    position: absolute;
+    width: 60%;
+    top: 25%;
+    left: 5%;
+}
+
+h1{
+    position: absolute;
+    left: 114vh;
+    top: 36%;
+
+    font-family: 'Alegreya', serif;
+    color: #A0C4BF;
+    text-align: center;
+    font-size: 85px;
+}
+
+h1 span{
+    font-size: 132px;
+    background-color: #a6a6a634;
+    border-radius: 70%;
+    letter-spacing: 50px;
+}
+
+h1 span:hover{
+    border-radius: 1%;
+}
+
+.mypets-banner h2{
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #a0c4bf50;
+}
+
+.mypets-banner h2:hover{
+    border-radius: 20%;
+}
+/* --- END MY PETS BANNER ---*/
+
+
+/* --- MY PETS INFO CARD ---*/
+.mypets-cards{
+    position: relative;
+    top: 48em;
+    display: flex;
+    flex-direction: row;
+}
+
+#mypets-title{
+    display: absolute;
+    top: 100vh;
+    font-size: large;
+}
+
+.mypets-cards img{
+    position: relative;
+}
+
+#mypets-text-info{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #a0c4bf79;
+    border-radius: 5px;
+}
+
+#mypets-text-info:hover{
+    font-size: 18px;
+}
+
+#mypets-title{
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#mypets-button{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding: 10px;
+    margin-top: 14px;
+
+    border-radius: 10px;
+    border-style: none;
+    opacity: 0.6;
+    background-color: #A0C4BF;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+
+    cursor: pointer;
+}
+
+#mypets-button:hover{
+    opacity: 1;
+}
+
+/*  MY PETS FIRST CARD */
+.first-card-img img{
+    width: 38%;
+    left: 20vh;
+}
+
+.first-card-info p{
+    position: relative;
+    width: 50%;
+    left: 15%;
+}
+
+.first-card-info h3{
+    position: relative;
+    width: 50%;
+    left: 15%;
+}
+
+.first-card-info button{
+    position: relative;
+    left: 28%;
+}
+/*  END MY PETS FIRST CARD */
+
+
+/*  MY PETS SECOND CARD */
+.second-card-img img{
+    width: 70%;
+    left: -5vh;
+}
+
+.second-card-info p{
+    position: relative;
+    width: 80%;
+    left: -16%;
+}
+
+.second-card-info h3{
+    position: relative;
+    width: 80%;
+    left: -16%;
+}
+
+.second-card-info button{
+    position: relative;
+    left: 2%;
+}
+/*  END MY PETS SECOND CARD */
+
+
+/*  MY PETS THIRD CARD */
+.third-card-img img{
+    width: 48%;
+    left: 15vh;
+}
+
+.third-card-info p{
+    position: relative;
+    width: 60%;
+    left: 20%;
+}
+
+.third-card-info h3{
+    position: relative;
+    width: 60%;
+    left: 20%;
+}
+
+.third-card-info button{
+    position: relative;
+    left: 36%;
+}
+/*  END MY PETS THIRD CARD */
+
+/* --- END MY PETS INFO CARD ---*/
