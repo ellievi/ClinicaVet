@@ -114,9 +114,20 @@ h1 span:hover{
     flex-direction: row;
 }
 
+#mypets-card-title{
+    position: relative;
+    top: 110vh;
+    margin-bottom: 16px;
+
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 #mypets-title{
     display: absolute;
-    top: 100vh;
+    top: 2vh;
     font-size: large;
 }
 
@@ -134,6 +145,11 @@ h1 span:hover{
 
 #mypets-text-info:hover{
     font-size: 18px;
+}
+
+.mypets-card-info :not(#mypets-title){
+    position: relative;
+    top: 4vh;
 }
 
 #mypets-title{
@@ -157,14 +173,16 @@ h1 span:hover{
     border-radius: 10px;
     border-style: none;
     opacity: 0.6;
-    background-color: #A0C4BF;
+
     color: rgb(0, 0, 0);
+    background-color: #9b9b9baf;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
 
     cursor: pointer;
 }
 
 #mypets-button:hover{
+    background-color: #A0C4BF;
     opacity: 1;
 }
 
