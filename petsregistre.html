@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="petsregistre.css">
+    <title>ClinicaVet - My Pets Cadastro</title>
+</head>
+<body>
+    <!--- TITLE --->
+    <div class="pets-registre-title">
+        <button><h1>Registre seu pet aqui!</h1></button>
+        <div id="pets-title-background"></div>
+    </div>
+    <!--- END TITLE --->
+
+    <!--- FORM --->
+    <form action="" class="form-pets">
+        <label for="animal"></label>Animal
+        <input type="text" placeholder="Cachorro, gato, tartaruga...">
+    
+        <label for="name"></label>Nome
+        <input type="text" placeholder="Nome do seu pet">
+    
+        <label for="breed"></label>Raça
+        <input type="text">
+    
+        <div id="pets-gender">
+            <label for="gender"></label>Sexo
+            <input type="radio" name="gender" id="genderpet" checked>Fêmea
+            <input type="radio" name="gender" id="genderpet">Macho
+        </div>
+
+        <label for="age"></label>Idade
+        <input type="number" name="age" id="pet-age">
+
+        <label for="raca"></label>Pelagem
+        <input type="text" name="" id="" placeholder="Pelagem longa, curta...">
+
+        <button type="submit" id="submit-btn">Cadastrar e ir para a página do prontuário</button>
+    </form>
+   
+    <!--- END FORM --->
+</body>
+</html>
