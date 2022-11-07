@@ -14,7 +14,7 @@ body{
 /*** TITLE ***/
 h1{
     text-align: center;
-    padding: 50px;
+    padding: 40px;
     margin-top: -15px;
     
 
@@ -41,9 +41,26 @@ form{
     position: absolute;
     display: flex;
     flex-direction: column;
-    left: 38%;
+    left: 34%;
+    top: 20vh;
+    text-align: center;
 
+    background-color: #b2d1cd7e;
+    border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+}
+
+form a {
+    position: absolute;
+    top: 92%;
+    left: 26%;
+    color: #000000;
+    opacity: 0.4;
+}
+
+form a:hover{
+    opacity: 1;
 }
 
 /* LABEL */
@@ -52,13 +69,14 @@ form label{
     margin-bottom: 10px;
 }
 
-
 /* LABEL */
 
 /* INPUT */
 form input{
     padding: 4px;
+    margin-left: 10px;
 
+    text-align: center;
     border-radius: 5px;
     border-color: #a2c0bc;
     font-family: 'Montserrat', sans-serif;
@@ -68,11 +86,6 @@ form input:focus{
     outline: 0;
 }
 
-#pets-gender{
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-}
 
 /* INPUT */
 

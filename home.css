@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 
 *{
     margin: 0;
@@ -36,7 +38,7 @@ nav{
 }
 
 #menu-item{
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 14px;
     margin: 26px;
@@ -175,3 +177,36 @@ h2{
     top: 100vh;
 }
 /*** END TEAM SECTION ***/
+
+
+/* FOOTER */
+footer{
+    background-color: #cce2e0;
+    border-style: solid;
+    border-color: transparent;
+    padding: 2.3%;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info-footer-1{
+    word-spacing: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-footer-2{
+    word-spacing: 2px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-footer img{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 10%;
+}
+
+/* FOOTER */

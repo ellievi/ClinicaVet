@@ -16,31 +16,59 @@
     <!--- END TITLE --->
 
     <!--- FORM --->
-    <form action="" class="form-pets">
-        <label for="animal"></label>Animal
-        <input type="text" placeholder="Cachorro, gato, tartaruga...">
-    
-        <label for="name"></label>Nome
-        <input type="text" placeholder="Nome do seu pet">
-    
-        <label for="breed"></label>Raça
-        <input type="text">
-    
-        <div id="pets-gender">
-            <label for="gender"></label>Sexo
-            <input type="radio" name="gender" id="genderpet" checked>Fêmea
-            <input type="radio" name="gender" id="genderpet">Macho
-        </div>
+    <form action="" class="form-pets" onsubmit="preventReload(event), getData()">
 
-        <label for="age"></label>Idade
-        <input type="number" name="age" id="pet-age">
+        <label for="animal">Animal:
+            <input type="text" placeholder="Cachorro, gato, tartaruga..." id="animal" required>
+        </label>
+    
+        <label for="name">Nome:
+            <input type="text" placeholder="Nome do seu pet" id="pet-name" required>
+        </label>
 
-        <label for="raca"></label>Pelagem
-        <input type="text" name="" id="" placeholder="Pelagem longa, curta...">
+        <label for="breed">Raça:
+            <input type="text" id="pet-breed" required>
+        </label>
+
+        <label for="gender">Sexo:
+            <input type="radio" name="gender" value="Female" id="pet-gender" checked required>Fêmea
+            <input type="radio" name="gender" value="Male" id="pet-gender">Macho
+        </label>
+
+        <label for="age">Idade:
+            <input type="number" name="age" id="pet-age" min="0" max="100" required>
+        </label>
+
+        <label for="raca">Pelagem:
+            <input type="text" name="" id="pet-fur" placeholder="Pelagem longa, curta..." required>
+        </label>
 
         <button type="submit" id="submit-btn">Cadastrar e ir para a página do prontuário</button>
+        <a href="meuspets.html">Voltar à página "Meus pets?"</a>
     </form>
    
     <!--- END FORM --->
 </body>
+<script>
+    const preventReload = (event) => event.preventDefault();
+
+    const getData = () => {
+        let animal = document.querySelector('#animal').value;
+        let name = document.querySelector('#pet-name').value;
+        let breed = document.querySelector('#pet-breed').value;
+        let gender = document.querySelector('#pet-gender').value;
+        let age = document.querySelector('#pet-age').value;
+        let fur = document.querySelector('#pet-fur').value;
+        let id = Math.ceil(Math.random() * 99);
+
+        console.log(`PET INFO:
+        ID: ${id}
+        Animal: ${animal}
+        Name: ${name}
+        Breed: ${breed}
+        Gender: ${gender}
+        Age: ${age}
+        Fur: ${fur}`)
+    }
+</script>
 </html>
