@@ -189,24 +189,43 @@ footer{
     font-family: 'Montserrat', sans-serif;
 }
 
-.info-footer-1{
-    word-spacing: 2px;
-    display: flex;
-    justify-content: center;
+.social-footer{
+    position: relative;
+    margin-left: 7vh;
 }
 
-.info-footer-2{
-    word-spacing: 2px;
-    padding: 4px;
+.icons-social img{
+    width: 2%;
+    margin: 5px;
+}
+
+.rights-footer{
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 20vh;
+    
+    word-spacing: 2px;
+}
+
+.info-footer-rights2{
+    padding: 4px;
 }
 
 .img-footer img{
     position: relative;
     display: flex;
     justify-content: flex-end;
-    width: 10%;
+    width: 15%;
+    top: -20px;
+    left: 1px;
 }
 
+.email-footer{
+    text-align: center;
+}
+
+.email-footer input{
+    padding: 10px;
+}
 /* FOOTER */

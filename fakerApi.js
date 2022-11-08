@@ -1,4 +1,4 @@
-import { faker } from '@faker-js/faker';
+import { faker } from './node_modules/@faker-js/faker';
 
 const infos = () => ({
     name:  faker.name.fullName(),
@@ -7,4 +7,3 @@ const infos = () => ({
     phoneNumber:  faker.phone.number(),
 })
 export {infos};
-console.log(infos());
