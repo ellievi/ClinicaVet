@@ -223,9 +223,13 @@ footer{
 
 .email-footer{
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .email-footer input{
     padding: 10px;
+    width: 20em;
+    margin-left: 38em;
 }
 /* FOOTER */
